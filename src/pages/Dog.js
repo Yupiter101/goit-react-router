@@ -17,7 +17,6 @@ const Dogs = () => {
           return <li key={dog}><Link to={`${dog}`}>This is a {dog}</Link></li>
         })}
       </ul> 
-      {/* <Outlet /> */}
     </div> 
   );
 }

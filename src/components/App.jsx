@@ -18,7 +18,7 @@ const wrapStyle = {
   maxWidth: 960,
   width: '100%',
   margin: '40px auto',
-  fontSize: 26,
+  fontSize: 22,
   color: '#010101',
   backgroundColor: 'bisque',
 };
@@ -30,8 +30,8 @@ export const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<PageHome />} />
-          <Route path="dogs" element={<Dogs />} />
 
+          <Route path="dogs" element={<Dogs />} />
           <Route path="dogs/:dogId" element={<DogDetalis/>}>
               <Route path="galary" element={<DogGalary />}/>
               <Route path="descr" element={<DogDescrip />}/>
