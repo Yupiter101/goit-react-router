@@ -1,17 +1,26 @@
-
+import { lazy } from "react";
 import { Routes, Route } from "react-router-dom";
-import PageHome from "pages/PageHome";
-import Page1 from "pages/Page1";
-import Page2 from "pages/Page2";
-import Dogs from "pages/Dog";
-import DogDetalis from "pages/DogDetalis";
+// import PageHome from "pages/PageHome";
+// import Page1 from "pages/Page1";
+// import Page2 from "pages/Page2";
+// import Dogs from "pages/Dog";
+// import DogDetalis from "pages/DogDetalis";
 import Layout from "./Layout";
-import DogGalary from "./DogGalary";
-import DogDescrip from "./DogSubscr";
+// import DogGalary from "./DogGalary";
+// import DogDescrip from "./DogSubscr";
+import { NotFound } from "pages/NotFound";
 
 import { Mission } from "./Mission";
 import { Revievs } from "./Revievs";
 import { Team } from "./Team";
+
+const PageHome = lazy(()=> import('../pages/PageHome'));
+const Dogs = lazy(()=> import('../pages/Dog'));
+const Page1 = lazy(()=> import('../pages/Page1'));
+const Page2 = lazy(()=> import('../pages/Page2'));
+const DogDetalis = lazy(()=> import('../pages/DogDetalis'));
+const DogGalary = lazy(()=> import('./DogGalary'));
+const DogDescrip = lazy(()=> import('./DogSubscr'));
 
 
 const wrapStyle = {
@@ -43,7 +52,7 @@ export const App = () => {
               <Route path="reviews" element={<Revievs />} />
           </Route>
           <Route path="page2" element={<Page2 />} />
-          <Route path="*" element={<div>Страница не найдена</div>} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
 

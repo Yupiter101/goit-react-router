@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
 import { Haeder } from "./Header";
 // import styled from 'styled-components';
@@ -13,10 +14,15 @@ const Layout = () => {
   return (
     <div> 
       <Haeder></Haeder>
-      <main><Outlet /></main>
-      <footer> footer </footer>
+      <main>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Outlet />
+        </Suspense>
+      </main>
+      {/* <footer> footer </footer> */}
     </div>
   )
 }
 
 export default Layout;
+
