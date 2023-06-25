@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgoit_react_router=self.webpackChunkgoit_react_router||[]).push([[530],{530:function(r,e,i){i.r(e);var s=i(689),t=i(184);e.default=function(){var r=(0,s.UO)();return(0,t.jsxs)("div",{children:[(0,t.jsxs)("h3",{children:["Description off ",r.dogId]}),(0,t.jsx)("p",{children:"This is description "})]})}}}]);
+//# sourceMappingURL=530.578887b0.chunk.js.map

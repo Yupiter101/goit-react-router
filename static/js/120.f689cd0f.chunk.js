@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgoit_react_router=self.webpackChunkgoit_react_router||[]).push([[120],{70:function(e,r,t){t.r(r);var i=t(184);r.default=function(){return(0,i.jsx)("div",{children:(0,i.jsx)("h3",{children:"This is Home-page2"})})}}}]);
+//# sourceMappingURL=120.f689cd0f.chunk.js.map

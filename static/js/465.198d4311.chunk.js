@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgoit_react_router=self.webpackChunkgoit_react_router||[]).push([[465],{465:function(r,e,s){s.r(e);var t=s(689),a=s(184);e.default=function(){var r=(0,t.UO)();return(0,a.jsxs)("div",{children:[(0,a.jsxs)("h3",{children:["Galary off ",r.dogId]}),(0,a.jsx)("p",{children:"This is Galary "})]})}}}]);
+//# sourceMappingURL=465.198d4311.chunk.js.map
